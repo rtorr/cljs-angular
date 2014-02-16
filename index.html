@@ -1,0 +1,18 @@
+<html>
+    <body ng-app="app">
+        <div ng-controller="wat">
+            {{bob}}
+            <button ng-click="addTodo()">Clik me</button>
+        </div>
+        <div>
+            <label>Name:</label>
+            <input type="text" ng-model="yourName" placeholder="Enter a name here">
+            <hr>
+            <h1>Hello {{yourName}}!</h1>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js" type="text/javascript"></script>
+        <script src="out/goog/base.js" type="text/javascript"></script>
+        <script src="cljs_angular.js" type="text/javascript"></script>
+        <script type="text/javascript">goog.require("cljs_angular.core");</script>
+    </body>
+</html>
