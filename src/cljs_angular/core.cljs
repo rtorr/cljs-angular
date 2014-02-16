@@ -7,7 +7,8 @@
 (def a-vector [1 2 3 4 5])
 
 (controller app "bro" [$scope]
-     (set-scope $scope "wat" "wooo"))
+     (set-scope $scope "wat" "wooo")
+     (log $scope))
 
 
 (.controller app "wat"

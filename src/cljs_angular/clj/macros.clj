@@ -6,10 +6,10 @@
    `(aset ~sc ~scn ~@body))
 
 (defmacro controller
-  [module name deps stuff]
+  [module name deps & body]
    `(.controller ~module ~name
       (fn ~deps
-        ~stuff)))
+        ~@body)))
 
 (defmacro log
   [tolog]
